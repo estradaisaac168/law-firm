@@ -1,0 +1,32 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+@use '../base/global';
+
+
+// End Hero
+
+.mini-hero {
+    background: url('../img/service5.jpg') no-repeat center center/cover;
+    height: 30rem;
+
+
+    .hero-overlay {
+        @extend .overlay;
+    }
+
+
+    .container {
+        position: relative;
+        z-index: 2;
+
+        .hero-content {
+
+            width: 100%;
+
+            @include m.breakpoint-up(lg) {
+                max-width: 60%;
+            }
+        }
+
+    }
+}

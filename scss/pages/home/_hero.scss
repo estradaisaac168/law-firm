@@ -1,0 +1,32 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+@use '../../base/global';
+
+// Hero
+.hero {
+
+    background: url('../img/hero.webp') no-repeat center center/cover;
+    min-height: 53.125rem;
+
+    .hero-overlay {
+        @extend .overlay;
+    }
+
+
+    .container {
+        position: relative;
+        z-index: 2;
+
+        .hero-content {
+
+            width: 100%;
+
+            @include m.breakpoint-up(lg) {
+                max-width: 60%;
+            }
+        }
+
+    }
+}
+
+// End Hero

@@ -1,0 +1,32 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+// Contact
+.contact {
+
+    overflow: hidden;
+
+    .contact-content {
+        // display: grid;
+        // // place-items: center;
+        // gap: 1rem;
+
+        // @include m.breakpoint-up(lg) {
+        //     grid-template-columns: repeat(2, 1fr);
+        //     gap: 3rem;
+        // }
+
+        // .content-title {
+        //     justify-content: center;
+        //     align-content: center;
+        // }
+    }
+
+    .contact-form {
+        width: 100%;
+        border-radius: .5rem;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+}
+
+// End contact

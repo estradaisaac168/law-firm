@@ -1,0 +1,18 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+@use '../../base/global';
+
+// FQA
+.fqa {
+    .card {
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+
+        @include m.breakpoint-up(lg) {
+            width: 80%;
+        }
+    }
+}
+
+// End FQA

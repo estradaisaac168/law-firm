@@ -1,0 +1,48 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+@use '../../base/global';
+
+
+// Why us
+.why {
+
+    .why-content-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        place-items: center;
+        gap: 2.5rem;
+
+        @include m.breakpoint-up(md) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        // @include media-breakpoint-up(lg) {
+        //     gap: 2rem;
+        // }
+
+        .card {
+
+            border: none;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+            @include m.breakpoint-up(md) {
+
+                &:hover {
+                    transform: translateY(-2px);
+                    background: v.$accent-color;
+                    transition: all .4s ease-out;
+                }
+            }
+
+            span {
+
+                i {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+// End Why us

@@ -1,0 +1,68 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+@use '../base/global';
+
+// Whatsaap button
+
+.whatsapp-button {
+    // position: fixed;
+    @extend .button;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: v.$white;
+    border: 1px solid v.$white;
+    // border-radius: 50px;
+    // width: 3.5rem;
+    // height: 3.5rem;
+    // padding: 10px;
+    // margin: 0;
+    // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    // z-index: 1000;
+    // transition: background-color 0.3s ease;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: 24px;
+
+    &:hover {
+        background-color: #20b358;
+    }
+}
+
+.scroll-up-button {
+    @extend .button;
+    // position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: v.$secondary-color;
+    color: white;
+    // border-radius: 50px;
+    // width: 3.5rem;
+    // height: 3.5rem;
+    // padding: 10px;
+    // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    // z-index: 1000;
+    // transition: background-color 0.3s ease, opacity 0.5s ease;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: 32px;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+        background-color: darken(v.$secondary-color, 5%);
+    }
+}
+
+.scroll-up-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+// .whatsapp-button i {
+//     font-size: 24px;
+// }
+
+// End whatsaap button

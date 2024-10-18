@@ -1,0 +1,80 @@
+@use '../base/variables' as v;
+
+// Mixin breakpoints up
+@mixin breakpoint-up($breakpoint) {
+    @if $breakpoint ==xs {
+        @media (min-width: #{v.$breakpoint-xs}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==sm {
+        @media (min-width: #{v.$breakpoint-sm}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==md {
+        @media (min-width: #{v.$breakpoint-md}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==lg {
+        @media (min-width: #{v.$breakpoint-lg}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==xl {
+        @media (min-width: #{v.$breakpoint-xl}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==xxl {
+        @media (min-width: #{v.$breakpoint-xxl}) {
+            @content;
+        }
+    }
+}
+
+
+// Mixin breakpoint down
+@mixin breakpoint-down($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: #{v.$breakpoint-xs}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == sm {
+        @media (max-width: #{v.$breakpoint-sm}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == md {
+        @media (max-width: #{v.$breakpoint-md}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == lg {
+        @media (max-width: #{v.$breakpoint-lg}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == xl {
+        @media (max-width: #{v.$breakpoint-xl}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == xxl {
+        @media (max-width: #{v.$breakpoint-xxl}) {
+            @content;
+        }
+    }
+}

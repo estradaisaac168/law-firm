@@ -1,0 +1,112 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// NAVBAR
+.navbar {
+
+    padding: 1.2rem 0;
+
+
+    @include m.breakpoint-down(lg) {
+        background-color: v.$primary-color;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+
+    // border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    // box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+    // @include m.breakpoint-up(lg) {
+    //     position: sticky;
+    //     top: 0;
+    //     z-index: 1020;
+    // }
+
+
+    &.bg-transparent {
+        @include m.breakpoint-up(lg) {
+            background-color: transparent;
+            transition: background-color 0.4s ease;
+        }
+    }
+
+    &.scrolled {
+        @include m.breakpoint-up(lg) {
+            background-color: v.$primary-color;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            /* Color al hacer scroll */
+            transition: background-color 0.4s ease;
+        }
+    }
+
+    .navbar-brand {
+        color: v.$white;
+        font-weight: bold;
+
+        &:hover {
+            color: v.$secondary-color;
+        }
+    }
+
+
+    // ICON MENU NAVBAR
+    .navbar-toggler {
+        box-shadow: none !important;
+        border: none;
+    }
+
+    // COLOR LINKS
+    .navbar-nav {
+
+        .nav-item {
+
+            .nav-link {
+                // font-weight: 600;
+                color: v.$white;
+
+                &:hover {
+                    color: v.$secondary-color;
+                }
+            }
+
+        }
+
+        .dropdown-menu {
+            animation: .5s slideup;
+
+            .dropdown-item {
+                color: v.$primary-color;
+
+                &:focus,
+                &:active {
+                    background-color: v.$primary-color; // Cambiar color de fondo al hacer clic o estar activo
+                    color: v.$white; // Cambiar color del texto al estar activo
+                }
+            }
+        }
+
+        @keyframes slideup {
+            from {
+                transform: translateY(10%);
+            }
+
+            to {
+                transform: translateY(0%);
+            }
+        }
+    }
+
+    .button-navbar {
+        padding: .7rem 1.2rem;
+
+        @include m.breakpoint-up(lg) {
+            margin: 0 1.5rem;
+        }
+    }
+}
+
+
+
+// END NAVBAR
