@@ -33,12 +33,14 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.
 $navbar-toggler-font-size: 1.5rem;
 
 // ACCORDION CUSTOM
+$accordion-padding-y: 1.5rem;
 $accordion-button-bg: v.$tertiary-color;
 $accordion-button-color: v.$accent-color;
 $accordion-button-active-bg: v.$tertiary-color;
 $accordion-button-active-color: v.$accent-color;
 $accordion-button-focus-box-shadow: none;
 
+$accordion-icon-width: 2rem;
 $accordion-icon-color: v.$accent-color;
 $accordion-icon-active-color: v.$accent-color;
 

@@ -4,6 +4,7 @@
 
 // FQA
 .fqa {
+
     .card {
         border: none;
         width: 100%;
@@ -11,6 +12,11 @@
 
         @include m.breakpoint-up(lg) {
             width: 80%;
+        }
+
+        .accordion-header button,
+        .accordion-body{
+            font-size: 1.2rem;
         }
     }
 }
