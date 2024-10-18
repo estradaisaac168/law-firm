@@ -34,9 +34,11 @@
     <!-- HEADER -->
 
     <!-- NAVBAR TO NAVIGATE THE SECTIONS OF THE PAGE -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Law Firm</a>
+            <a class="navbar-brand" href="#">
+                <img src="./img/law-firm-remove-bg.png" alt="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +75,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-outline-secondary button-navbar btn-lg">Schedule an Appointment</a>
+                    <a href="#" class="btn btn-outline-secondary button-navbar btn-lg">Free consultation</a>
                 </div>
             </div>
         </div>
@@ -84,11 +86,11 @@
 
     <!-- HERO -->
     <section id="mini-hero"
-        class="mini-hero d-flex flex-column align-items-center justify-content-center position-relative">
+        class="mini-hero d-flex flex-column align-items-center justify-content-end position-relative">
         <!-- DARK LAYER -->
         <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content text-white text-center text-lg-start">
+            <div class="hero-content text-white text-center text-lg-start mb-5">
                 <h1 class="heading-hero display-4 title-animation">Sobre nosotros</h1>
             </div>
         </div>
@@ -328,26 +330,39 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
+
             <div class="row">
-                <section class="col-12 col-md-4 text-white p-4">
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
                     <div class="container">
-                        <h5 class="mb-4 text-uppercase">Enlaces de Interés</h5>
-                        <nav class="link-content">
+                        <a class="footer-brand" href="#">
+                            <img src="./img/law-firm-remove-bg.png" alt="logo">
+                        </a>
+                        <p class="lead mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates
+                            atque, architecto ad omnis.</p>
+                    </div>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
+                    <div class="container">
+                        <h5 class="text-uppercase">Links of Interest</h5>
+                        <nav class="links-footer mt-4">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="#politicas" class="text-decoration-none">Politica de privacidad</a>
+                                    <a href="#politicas" class="text-decoration-none">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#contacto" class="text-decoration-none">Contacto</a>
+                                    <a href="#contacto" class="text-decoration-none">Contact</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </section>
-                <section class="col-12 col-md-4 text-white p-4">
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
                     <div class="container">
-                        <h5 class="mb-4 text-uppercase">MENU</h5>
-                        <nav class="link-services">
+                        <h5 class="text-uppercase">MENU</h5>
+                        <nav class="links-footer mt-4">
                             <ul class="list-unstyled">
                                 <li>
                                     <a href="#services" class="text-decoration-none">Mis Servicios</a>
@@ -368,10 +383,11 @@
                         </nav>
                     </div>
                 </section>
-                <section class="col-12 col-md-4 p-4">
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
                     <div class="container">
                         <div class="social-links">
-                            <h5 class="mb-4 text-uppercase">Redes Sociales</h5>
+                            <h5 class="mb-4 text-uppercase">Social networks</h5>
                             <nav class="social-content">
                                 <ul class="list-unstyled">
                                     <li><a href="#"><i class="bi bi-facebook"></i></a></li>
@@ -383,11 +399,13 @@
                         </div>
                     </div>
                 </section>
+
             </div>
         </div>
+
         <div class="footer-copyright">
-            <p class="copy">&copy; 2024 - Todos los derechos reservados. </p>
-            <p class="author"> Diseñado por IsaDesign</p>
+            <p class="copy">&copy; 2024 - All rights reserved. </p>
+            <p class="author"> Designed by IsaDesign</p>
         </div>
     </footer>
 

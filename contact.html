@@ -35,9 +35,11 @@
 
 
     <!-- NAVBAR TO NAVIGATE THE SECTIONS OF THE PAGE -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Law Firm</a>
+            <a class="navbar-brand" href="#">
+                <img src="./img/law-firm-remove-bg.png" alt="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -74,7 +76,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-outline-secondary button-navbar btn-lg">Schedule an Appointment</a>
+                    <a href="#" class="btn btn-outline-secondary button-navbar btn-lg">Free consultation</a>
                 </div>
             </div>
         </div>
@@ -85,12 +87,12 @@
 
     <!-- HERO -->
     <section id="mini-hero"
-        class="mini-hero d-flex flex-column align-items-center justify-content-center position-relative">
+        class="mini-hero d-flex flex-column align-items-center justify-content-end position-relative">
         <!-- DARK LAYER -->
         <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content text-white text-center text-lg-start">
-                <h1 class="heading-hero display-4 title-animation">Contact us</h1>
+            <div class="hero-content text-white text-center text-lg-start mb-5">
+                <h1 class="heading-hero display-4 title-animation">Sobre nosotros</h1>
             </div>
         </div>
     </section>
@@ -112,80 +114,89 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section contact bg-accent">
-
         <div class="container">
 
             <div class="row contact-content">
 
-                <div class="content-title mb-0 text-start">
+                <div class="content-title">
                     <h2 class="heading title-animation">Contact us</h2>
-                    <hr class="mb-4 text-secondary">
+                    <p class="lead text-black-50 text-animation w-lg-auto mb-4">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. </p>
+                    <hr class="text-secondary">
                 </div>
 
-                <div class="col-md-12 col-lg-6 pb-3 p-md-3 d-flex justify-content-beetwen align-items-start">
-                    <div class="content-title">
-                        <!-- <div class="text-start">
-                            <h2 class="heading title-animation">Contact us</h2>
-                        </div>
-                        <p class="animation-left text-muted text-start">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolores quia provident
-                            incidunt in quae illum, laboriosam et maiores ad at deserunt nisi aperiam placeat, adipisci
-                            sint
-                            consequatur ut sapiente..
-                        </p> -->
+                <div class="col-md-12 col-lg-6 pb-3  d-flex justify-content-beetwen align-items-start">
 
-                        <div class="contact-info text-start text-muted">
-                            <div class="info-item">
-                                <h4>Office Address</h4>
-                                <p>123 Main St, Suite 456<br>City, State, ZIP Code</p>
-                            </div>
-                            <div class="info-item">
-                                <h4>Phone</h4>
-                                <p><a href="tel:+1234567890" class="btn-link link-secondary">(123) 456-7890</a></p>
-                            </div>
-                            <div class="info-item">
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@lawfirm.com"
-                                        class="btn-link link-secondary">info@lawfirm.com</a></p>
-                            </div>
-                            <div class="info-item">
-                                <h4>Business Hours</h4>
-                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By Appointment Only</p>
-                            </div>
+                    <div class="contact-info text-start text-muted">
+
+                        <div class="info-item">
+                            <h4>Office Address</h4>
+                            <p>123 Main St, Suite 456<br>City, State, ZIP Code</p>
                         </div>
-                        <!-- <hr class="mb-4 text-secondary"> -->
+                        <div class="info-item">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+1234567890" class="btn-link link-secondary">(123) 456-7890</a></p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@lawfirm.com" class="btn-link link-secondary">info@lawfirm.com</a>
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By Appointment Only</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-12 col-lg-6 p-md-3 d-flex justify-content-center align-items-center">
+                <div class="col-md-12 col-lg-6 pb-5 pb-lg-3 d-flex justify-content-center align-items-center">
+
                     <div class="contact-form animation-right bg-white">
-                        <form class="form p-4 p-xl-5">
+
+                        <form class="form p-4 p-xl-5 needs-validation" novalidate>
 
                             <div class="mb-4">
                                 <label for="nombre" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="">
+                                <input type="text" class="form-control" id="nombre" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    This field cannot be empty
+                                </div>
                             </div>
 
                             <div class="mb-4">
                                 <label for="correo" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="correo" placeholder="">
+                                <input type="email" class="form-control" id="correo" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    This field cannot be empty
+                                </div>
                             </div>
 
                             <div class="mb-4">
                                 <label for="asunto" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="asunto" placeholder="">
+                                <input type="text" class="form-control" id="asunto" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    This field cannot be empty
+                                </div>
                             </div>
 
                             <div class="mb-4">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder=""></textarea>
+                                <textarea class="form-control" id="message" rows="4" placeholder="" required></textarea>
+                                <div class="invalid-feedback">
+                                    This field cannot be empty
+                                </div>
                             </div>
 
                             <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required
+                                    checked>
                                 <label class="form-check-label" for="flexCheckChecked">
                                     I accept terms and conditions
                                 </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
                             </div>
 
                             <div class="form-text mb-4">
@@ -202,13 +213,14 @@
                     </div>
                 </div>
 
-                <div class="col-12 p-md-3">
-                    <!-- MAP -->
+                <div class="col-12">
 
-                    <div class="content-title text-start mt-5">
-                        <h2 class="heading title-animation">Find us here</h2>
-                        <hr class="mb-4 text-secondary">
+
+                    <div class="content-title text-center text-lg-start">
+                        <h2 class="heading title-animation">Find us</h2>
+                        <hr class="text-secondary">
                     </div>
+
                     <div class="map-container">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096397!2d144.9537353154481!3d-37.81621817975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f4d2d1%3A0x2e22305c34e5e80!2sMelbourne%20Central!5e0!3m2!1sen!2sau!4v1602632022724!5m2!1sen!2sau"
@@ -228,9 +240,9 @@
         <div class="call-overlay"></div>
         <div class="call-content">
             <div class="text-center">
-                <h2 class="heading text-white title-animation display-5">¿Necesitas asistencia legal?</h2>
+                <h2 class="heading text-white title-animation display-5">Do you need legal assistance?</h2>
             </div>
-            <button class="btn btn-lg btn-secondary pulse mt-4">CONSULTA GRATIS</button>
+            <button class="btn btn-lg btn-secondary pulse mt-4">FREE CONSULTATION</button>
         </div>
     </section>
 
@@ -246,26 +258,39 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
+
             <div class="row">
-                <section class="col-12 col-md-4 text-white p-4">
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
                     <div class="container">
-                        <h5 class="mb-4 text-uppercase">Enlaces de Interés</h5>
-                        <nav class="link-content">
+                        <a class="footer-brand" href="#">
+                            <img src="./img/law-firm-remove-bg.png" alt="logo">
+                        </a>
+                        <p class="lead mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates
+                            atque, architecto ad omnis.</p>
+                    </div>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
+                    <div class="container">
+                        <h5 class="text-uppercase">Links of Interest</h5>
+                        <nav class="links-footer mt-4">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="#politicas" class="text-decoration-none">Politica de privacidad</a>
+                                    <a href="#politicas" class="text-decoration-none">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#contacto" class="text-decoration-none">Contacto</a>
+                                    <a href="#contacto" class="text-decoration-none">Contact</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </section>
-                <section class="col-12 col-md-4 text-white p-4">
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
                     <div class="container">
-                        <h5 class="mb-4 text-uppercase">MENU</h5>
-                        <nav class="link-services">
+                        <h5 class="text-uppercase">MENU</h5>
+                        <nav class="links-footer mt-4">
                             <ul class="list-unstyled">
                                 <li>
                                     <a href="#services" class="text-decoration-none">Mis Servicios</a>
@@ -286,10 +311,11 @@
                         </nav>
                     </div>
                 </section>
-                <section class="col-12 col-md-4 p-4">
+
+                <section class="col-12 col-md-6 col-lg-3 text-white p-4">
                     <div class="container">
                         <div class="social-links">
-                            <h5 class="mb-4 text-uppercase">Redes Sociales</h5>
+                            <h5 class="mb-4 text-uppercase">Social networks</h5>
                             <nav class="social-content">
                                 <ul class="list-unstyled">
                                     <li><a href="#"><i class="bi bi-facebook"></i></a></li>
@@ -301,13 +327,16 @@
                         </div>
                     </div>
                 </section>
+
             </div>
         </div>
+
         <div class="footer-copyright">
-            <p class="copy">&copy; 2024 - Todos los derechos reservados. </p>
-            <p class="author"> Diseñado por IsaDesign</p>
+            <p class="copy">&copy; 2024 - All rights reserved. </p>
+            <p class="author"> Designed by IsaDesign</p>
         </div>
     </footer>
+
 
 
     <!-- BOOTSTRAP JS -->
