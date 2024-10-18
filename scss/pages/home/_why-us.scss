@@ -7,19 +7,6 @@
 .why {
 
     .why-content-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        place-items: center;
-        gap: 2.5rem;
-
-        @include m.breakpoint-up(md) {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-
-        // @include media-breakpoint-up(lg) {
-        //     gap: 2rem;
-        // }
 
         .card {
 
