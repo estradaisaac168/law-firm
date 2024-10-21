@@ -5,7 +5,11 @@
 
 $theme-colors: (
     "primary": v.$primary-color,
-    "secondary": v.$secondary-color
+    "secondary": v.$secondary-color,
+    "success": #6f42c1,
+    "info": #dc3545,
+    "warning": #198754,
+    "danger": #20c997,
 );
 
 // Create your own map
@@ -52,7 +56,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.
 $input-focus-border-color: rgba(var(--bs-secondary-rgb), .8); // Color de borde en foco
 $input-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-secondary-rgb), .25); // Sombra en foco
 
-$form-check-input-checked-bg-color:  v.$primary-color;
-$form-check-input-focus-box-shadow:  v.$secondary-color;
+$form-check-input-checked-bg-color: v.$primary-color;
+$form-check-input-focus-box-shadow: v.$secondary-color;
 
 @import "../../bootstrap/scss/bootstrap.scss";

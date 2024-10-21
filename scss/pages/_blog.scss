@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.blog {
+
+    .card {
+
+        width: 25rem;
+
+        @include m.breakpoint-up(md) {
+            width: 100%;
+        }
+
+        img {
+            height: 15.625rem;
+        }
+
+        .card-footer {
+            background-color: transparent;
+            border: none;
+
+            &:hover {
+                transform: translateY(-2px);
+                transition: all .4s ease-out;
+            }
+        }
+    }
+
+    .list-group-item {
+        border: none;
+    }
+
+    .badge {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+}

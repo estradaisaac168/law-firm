@@ -1,15 +1,19 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.animation{
+.animation {
     opacity: 0;
     transition: all 1.5s ease-out;
     overflow: hidden;
-    will-change: transform, opacity; 
+    will-change: transform, opacity;
     position: relative;
-    max-width: 100%;  
+    max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.animate-pop-in {
+    animation: pop-in .6s ease-out forwards;
 }
 
 .title-animation {
@@ -132,5 +136,20 @@
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+
+
+/* Animations */
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }
