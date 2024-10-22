@@ -12685,23 +12685,11 @@ hr {
 }
 
 .blog .card {
-  width: 25rem;
-}
-@media (min-width: 768px) {
-  .blog .card {
-    width: 100%;
-  }
+  width: 100%;
 }
 .blog .card img {
-  height: 15.625rem;
-}
-.blog .card .card-footer {
-  background-color: transparent;
-  border: none;
-}
-.blog .card .card-footer:hover {
-  transform: translateY(-2px);
-  transition: all 0.4s ease-out;
+  width: 100%;
+  height: 21.875rem;
 }
 .blog .list-group-item {
   border: none;
