@@ -15,6 +15,7 @@ $theme-colors: (
 // Create your own map
 $custom-colors: (
     "tertiary": v.$tertiary-color,
+    "complement" : v.$complement-color,
     "accent": v.$accent-color,
     "grey": v.$grey,
     "white": v.$white,

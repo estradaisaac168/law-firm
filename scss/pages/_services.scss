@@ -5,22 +5,23 @@
 // Services
 .services {
 
+
     .services-content-cards {
 
         overflow: hidden;
 
         .card {
+
             width: 25rem;
-            height: 100%;
+
+            @include m.breakpoint-up(md){
+            width: 100%;
+            }
+
             border-radius: none;
             border: none;
             overflow: hidden;
             position: relative;
-
-            @include m.breakpoint-up(md) {
-                width: 100%;
-                min-height: 100%;
-            }
 
             &::before {
                 content: '';
@@ -29,8 +30,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                // background-color: rgba(0, 0, 0, 0.5);
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.2));
+                background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
                 z-index: 2;
             }
 
@@ -55,8 +55,12 @@
         }
 
         .card-header {
-            height: 100%;
+            // height: 100%;
             overflow: hidden;
+
+            h4{
+                margin: 1rem 0 0 0;
+            }
         }
 
         .card-header,
